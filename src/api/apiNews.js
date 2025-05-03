@@ -16,6 +16,7 @@ export const getNews = async ({
     return response.data;
   } catch (error) {
     console.log(error);
+    alert("Ошибка в получении данных")
   }
 };
 
@@ -27,5 +28,6 @@ export const getCategories = async () => {
     return response.data;
   } catch (error) {
     console.log(error);
+    alert("Ошибка в получении категорий")
   }
 };

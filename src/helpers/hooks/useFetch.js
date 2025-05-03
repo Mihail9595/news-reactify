@@ -12,7 +12,7 @@ export const useFetch = (fetchFunction, params) => {
       try {
         setIsLoading(true);
         const result = await fetchFunction(params);
-        setData(result)
+        setData(result);
       } catch (error) {
         setError(error);
       } finally {
@@ -20,5 +20,5 @@ export const useFetch = (fetchFunction, params) => {
       }
     })();
   }, [fetchFunction, stringParams]);
-  return {data, isLoading, error}
+  return { data, isLoading, error };
 };

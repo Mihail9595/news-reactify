@@ -4,7 +4,7 @@ const Search = ({ keywords, setKeywords }) => {
   return (
     <div className={styles.search}>
       <input
-        type="text"
+        type="search"
         value={keywords}
         onChange={(e) => setKeywords(e.target.value)}
         className={styles.input}
